@@ -1,2 +1,2 @@
 # Ethio-CAD
-A user friendly web-site that helps connect architectural and structural engineers, to solve issues with standards and manual task automation. 
+A user-friendly website designed to facilitate collaboration between architectural and structural engineers, providing a platform for them to address issues related to industry standards and automate repetitive manual tasks. The site offers a range of tools and resources that streamline communication, enhance workflow efficiency, and ensure compliance with regulatory requirements. With intuitive navigation and robust features, it empowers professionals to efficiently share knowledge, access up-to-date standards, and leverage automation to focus on more strategic aspects of their projects.
