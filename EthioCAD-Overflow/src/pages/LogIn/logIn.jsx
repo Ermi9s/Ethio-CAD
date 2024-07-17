@@ -7,9 +7,9 @@ import {
   Typography,
   TextField,
   Button,
+  Divider,
 } from "@mui/material";
-import {useNavigate} from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 function logIn() {
   const navigate = useNavigate();
@@ -17,13 +17,7 @@ function logIn() {
     <>
       <Box mt={0}>
         <Grid container component="main">
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={6}
-
-          >
+          <Grid item xs={12} sm={6} md={6}>
             <Box
               sx={{
                 my: 0,
@@ -33,9 +27,11 @@ function logIn() {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h4" fontWeight="bold"
-                sx = {{
-                  marginTop : 8,
+              <Typography
+                variant="h4"
+                fontWeight="bold"
+                sx={{
+                  marginTop: 8,
                 }}
               >
                 Welcome Back
@@ -69,9 +65,13 @@ function logIn() {
               <Box
                 sx={{ width: "45%", borderBottom: "1px solid #ccc", mr: 2 }}
               />
-              <Typography variant="body1" color="text.secondary" margin="0">
-                OR
-              </Typography>
+              <Divider sx={{ alignSelf: "center", width: "80%" }}>
+               
+                <Typography variant="body1" color="text.secondary" margin="0">
+                  OR
+                </Typography>
+              </Divider>
+
               <Box
                 sx={{ width: "45%", borderBottom: "1px solid #ccc", ml: 2 }}
               />
@@ -99,20 +99,23 @@ function logIn() {
                   id="password"
                   autoComplete="current-password"
                   sx={{
-                      marginTop : 6,
-                  }}  
+                    marginTop: 6,
+                  }}
                 />
                 <Button
                   type="submit"
                   fullWidth
                   variant="contained"
+                  onClick={() => {
+                    navigate("/ethioCAD");
+                  }}
                   sx={{
                     backgroundColor: "#b9892d",
-                    borderRadius : 7,
-                    marginTop : 6,
-                    color: "white", 
+                    borderRadius: 7,
+                    marginTop: 6,
+                    color: "white",
                     "&:hover": {
-                      backgroundColor: "#a17827", 
+                      backgroundColor: "#a17827",
                     },
                     mt: 3,
                     mb: 2,
@@ -128,9 +131,12 @@ function logIn() {
                     </Button>
                   </Grid>
                   <Grid item>
-                    <Button 
-                    onClick={()=> {navigate('/sign-up')}}
-                    sx={{ textTransform: "none" }}>
+                    <Button
+                      onClick={() => {
+                        navigate("/sign-up");
+                      }}
+                      sx={{ textTransform: "none" }}
+                    >
                       {"Don't have an account? Sign Up"}
                     </Button>
                   </Grid>

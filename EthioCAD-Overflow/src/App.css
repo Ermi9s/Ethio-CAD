@@ -1,7 +1,14 @@
 #root {
   padding: 4rem;
-  padding-top: 0;
   text-align: center;
+  background-color: #d5d0c5;
+  height: 100%;
+  margin: 0 10px 0 10px;
+}
+#nav-bar {
+    padding: 0%;
+    width: 100%;
+    margin-bottom: 8rem;
 }
 
 header {
@@ -9,10 +16,14 @@ header {
 }
 
 nav {
+    background-color: #a48c5f;
+    top: 0;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
 }
 
 nav h2 {
@@ -20,7 +31,7 @@ nav h2 {
     margin: 1rem;
 }
 
-span {
+nav span {
     color: rgb(201, 2, 2);
 }
 

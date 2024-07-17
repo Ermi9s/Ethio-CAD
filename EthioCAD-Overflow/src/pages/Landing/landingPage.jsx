@@ -5,11 +5,14 @@ import oldGuy from "../../assets/static/oldeng.jpg";
 import eng1 from "../../assets/static/eng1.jpg";
 import engs from "../../assets/static/engs.jpg";
 import { useNavigate } from "react-router-dom";
-
+import Nav from "../../components/nav-bar/Nav";
 
 function landingPage() {
   const navigate = useNavigate();
   return (
+    <>
+    <Nav />
+   
     <Box m={1}>
       <Grid container component="main">
         <Grid
@@ -214,7 +217,7 @@ function landingPage() {
       </div>
       </Grid>
     </Box>
+    </>
   );
 }
-
 export default landingPage;

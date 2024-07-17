@@ -79,9 +79,12 @@ function SignUp() {
               <Box
                 sx={{ width: "45%", borderBottom: "1px solid #ccc", mr: 2 }}
               />
-              <Typography variant="body1" color="text.secondary" margin="0">
-                OR
-              </Typography>
+              <Divider sx={{ alignSelf: "center", width: "80%" }}>
+               
+               <Typography variant="body1" color="text.secondary" margin="0">
+                 OR
+               </Typography>
+             </Divider>
               <Box
                 sx={{ width: "45%", borderBottom: "1px solid #ccc", ml: 2 }}
               />

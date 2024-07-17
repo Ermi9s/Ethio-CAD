@@ -17,6 +17,7 @@ body ,html {
 }
 
 #footer {
+  bottom: 0;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -24,48 +25,16 @@ body ,html {
 
 /* for the issue page */
 .issue-content {
-    margin: 2rem 10rem;
+    display: flex;
+    margin: 1rem 10rem;
+    align-items: start;
+    flex-direction: column;
+    background-color: #aaa08a;
+    border-radius: 3rem;
 }
 
 .issue-content h2 {
     font-family: 'Poor story';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
 } 
-
-.issue-content input {
-    margin-left: 2rem;
-    border: none;
-    outline: none;
-    padding: 1.4rem;
-    padding-right: 8rem;
-    border-radius: .5rem;
-    font-size: 22px;
-}
-
-.issue-content textarea {
-    margin-left: 2rem;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    padding: 1rem;
-}
-
-.issue-content button {
-    padding: 1rem 2rem;
-    margin: 1.3rem;
-    margin-left: 90%;
-    align-items: center;
-    border: none;
-    outline: none;
-    border-radius: 1rem;
-    font-size: 23px;
-    font-family: 'poor story';
-    background: #B9892D;
-    color: #fff;
-    cursor: pointer;
-}
-
-.issue-content button:hover {
-    background: #ac7818;
-}

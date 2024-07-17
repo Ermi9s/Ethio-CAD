@@ -1,17 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ReactDOM from "react-dom";
+import { Button } from "@mui/material";
 
 function Nav() {
-  return (
+  return ReactDOM.createPortal(
     <header>
       <nav>
-        <h2>
-          Ethiocad <span>Overflow</span>
-        </h2>
-
+        <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+          {" "}
+          <h2>
+            Ethiocad <span>Overflow</span>
+          </h2>
+        </Link>
         <ul>
           <li>ContactDev</li>
-          <li>Issues</li>
+          <li>
+            <Link
+              to="/issue"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              Issues
+            </Link>
+          </li>
           <li>Questions</li>
         </ul>
 
@@ -21,11 +32,16 @@ function Nav() {
         </label>
 
         <div className="account">
-          <Link to="#" id="acc_one">Sign Up</Link>
-          <Link to="#" id="acc_two">Log in</Link>
+          <Link to="/sign-up" id="acc_one">
+            Sign Up
+          </Link>
+          <Link to="/login" id="acc_two">
+            Log in
+          </Link>
         </div>
       </nav>
-    </header>
+    </header>,
+    document.getElementById("nav-bar")
   );
 }
 

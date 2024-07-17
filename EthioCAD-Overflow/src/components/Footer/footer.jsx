@@ -6,8 +6,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return ReactDOM.createPortal(
-    <Box bgcolor="black" color="white" p={2} mt={0} mb={0} height={160}>
-      <Box display="flex" justifyContent="space-around" mb={2}>
+    <Box bgcolor="#232323" color="white" p={2} height={160}
+      sx={{
+        bottom: 0,
+      }}
+    >
+      <Box display="flex" justifyContent="space-around" mb={0}>
         <Box>
           <Typography
             variant="h5"
